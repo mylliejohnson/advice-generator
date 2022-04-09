@@ -1,38 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  color: hsl(193, 38%, 86%);
+  background:hsl(218, 23%, 16%);
+  font-family: 'Manrope';
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  margin: auto;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.advice-card {
+  background-color: hsl(217, 19%, 24%);
+  text-align: center;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+img {
+  display: block;
+  margin: auto;
+  margin-top:20px;
+}
+
+#advice-id {
+  margin: 20px;
+  font-size: .8em;
+  letter-spacing: 3px;
+  color: hsl(150, 100%, 66%);
+  text-transform: uppercase;
+}
+
+#advice {
+  font-size: 1.5em;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  width: 85%;
+  margin: auto;
+}
+
+button {
+  width: 60px;
+  height:60px;
+  background-color: hsl(150, 100%, 66%);
+  border: none;
+  border-radius: 50%;
+  position: relative;
+  margin: auto;
+  top: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button:hover {
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(82, 255, 168, .9);
+  transition: .9 ease-in;
+}
+
+@media screen and (min-width: 695px) and (max-width: 1394px) {
+  .advice-card {
+    width: 60%;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media screen and (min-width: 1395px) {
+  .advice-card {
+    width: 40%;
   }
 }

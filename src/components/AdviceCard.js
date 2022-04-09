@@ -19,9 +19,9 @@ function AdviceCard(props) {
             <div>
                 <p id="advice-id">Advice #{advice.id}</p>
                 <h3 id="advice">"{advice.advice}"</h3>
-                <img src="/images/pattern-divider-mobile.svg" />
+                <img src="images/pattern-divider-mobile.svg" />
                 <button onClick={() => window.location.reload()}>
-                    <img id="btn-dice" src="/images/icon-dice.svg" />
+                    <img id="btn-dice" src="images/icon-dice.svg" />
                 </button>
             </div>
         </div>
